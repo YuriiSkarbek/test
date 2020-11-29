@@ -29,6 +29,11 @@ function initializeClock(id, endtime) {
         minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
         secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
+
+        if(t.total <= 15000){
+           $('.rotate').css('opacity', '1');
+        }
+
         if (t.total <= 0) {
             clearInterval(timeinterval);
 
@@ -47,7 +52,7 @@ function initializeClock(id, endtime) {
     const timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date(Date.parse(new Date()) + 3 * 1000);
+const deadline = new Date(Date.parse(new Date()) + 18 * 1000);
 // const deadline = 'November 30 2020 22:00:00 GMT+0200';
 initializeClock('clockdiv', deadline);
 
