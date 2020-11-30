@@ -198,9 +198,15 @@ h1 {
     }
 
     .video{
-        width: 85%;
-        height: auto;
+        width: auto;
+        height: 100vh;
         display: none;
+    }
+
+    .video video{
+        margin: 0 auto;
+        width: auto;
+        height: 100%;
     }
 
 }
@@ -210,6 +216,12 @@ h1 {
         width: 100%;
         height: auto;
         display: none;
+    }
+
+    .video video{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
     }
 
     .rotate{

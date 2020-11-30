@@ -45,6 +45,9 @@ function initializeClock(id, endtime) {
             }, 500)
 
             $('#video').get(0).play();
+
+            $('.rotate ').tooltip('hide');
+            $('.boom ').tooltip('hide');
         }
     }
 
